@@ -2,18 +2,7 @@ import React from 'react';
 
 import './Editor.css';
 
-export default function Editor({
-  title,
-  setTitle,
-  subTitle,
-  setSubTitle,
-  blogBody,
-  setBlogBody,
-  textAlign,
-  setTextAlign,
-  font,
-  setFont,
-}) {
+export default function Editor({ setTitle, setSubTitle, setBlogBody, setTextAlign, setFont }) {
   return (
     <div className="editor">
       <div className="form-control">

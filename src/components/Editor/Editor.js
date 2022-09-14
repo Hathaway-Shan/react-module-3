@@ -11,6 +11,8 @@ export default function Editor({
   setBlogBody,
   textAlign,
   setTextAlign,
+  font,
+  setFont,
 }) {
   return (
     <div className="editor">
@@ -23,7 +25,7 @@ export default function Editor({
         <label>Subtitle</label>
       </div>
       <div className="form-control">
-        <select>
+        <select onChange={(e) => setFont(e.target.value)}>
           <option value="architect">{"Architect's Daughter"}</option>
           <option value="comforter">Comforter</option>
           <option value="fredoka">Fredoka</option>

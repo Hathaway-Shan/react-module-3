@@ -10,11 +10,12 @@ export default function Home() {
   const [title, setTitle] = useState('');
   const [subTitle, setSubTitle] = useState('');
   const [blogBody, setBlogBody] = useState('');
+  const [textAlign, setTextAlign] = useState('center');
 
   return (
     <main>
       {/* pass the state variables as props to the presentational components */}
-      <Preview title={title} subTitle={subTitle} blogBody={blogBody} />
+      <Preview title={title} subTitle={subTitle} blogBody={blogBody} textAlign={textAlign} />
       <Editor
         title={title}
         setTitle={setTitle}
@@ -22,6 +23,8 @@ export default function Home() {
         setSubTitle={setSubTitle}
         blogBody={blogBody}
         setBlogBody={setBlogBody}
+        textAlign={textAlign}
+        setTextAlign={setTextAlign}
       />
     </main>
   );
